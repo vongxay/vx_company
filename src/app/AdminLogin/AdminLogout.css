@@ -1,0 +1,26 @@
+.logout-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.logout-content {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.logout-content i {
+  font-size: 4rem;
+  color: var(--green);
+  margin-bottom: 2rem;
+}
+
+.logout-content p {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}

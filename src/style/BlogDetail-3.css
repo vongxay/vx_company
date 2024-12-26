@@ -1,0 +1,422 @@
+.blog-detail-container {
+    max-width: 1200px;
+    margin: 8rem auto 4rem;
+    padding: 3rem 4rem;
+    background: linear-gradient(to bottom, #fff, #f8fafc);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 2.5rem;
+}
+
+/* ส่วนของ SEO Techniques Grid */
+.seo-techniques-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.technique-card {
+    background: linear-gradient(145deg, #ffffff, #f0f2f5);
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.technique-card:hover {
+    transform: translateY(-5px);
+}
+
+.technique-card h3 {
+    background: linear-gradient(90deg, var(--green), #38a169);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.technique-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.technique-card ul li {
+    font-size: 1.6rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    padding-left: 2.5rem;
+    position: relative;
+}
+
+.technique-card ul li:before {
+    content: "✓";
+    color: var(--green);
+    position: absolute;
+    left: 0;
+}
+
+/* ส่วนของ SEM Comparison */
+.sem-comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.comparison-card {
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border-left: 6px solid var(--green);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comparison-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-card h3 {
+    color: var(--text-dark);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.comparison-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.comparison-card ul li {
+    font-size: 1.6rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    padding-left: 2.5rem;
+    position: relative;
+}
+
+.comparison-card ul li:before {
+    content: "•";
+    color: var(--green);
+    position: absolute;
+    left: 0;
+    font-size: 2rem;
+}
+
+/* ส่วนของ Analytics Section */
+.analytics-section {
+    margin: 4rem 0;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.metric-card {
+    background: linear-gradient(145deg, #ffffff, #f0f2f5);
+    padding: 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+}
+
+.metric-card i {
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, var(--green), #38a169);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+}
+
+.metric-card h3 {
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.metric-card p {
+    font-size: 1.6rem;
+    color: var(--text-light);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-detail-container {
+        margin-top: 6rem;
+    }
+
+    .seo-techniques-grid,
+    .sem-comparison,
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .technique-card,
+    .comparison-card,
+    .metric-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* เพิ่ม styles สำหรับ SEO vs SEM Comparison */
+.comparison-container {
+    background: linear-gradient(135deg, #1a365d 0%, #2563eb 100%);
+    padding: 5rem 3rem;
+    border-radius: 2.5rem;
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.2);
+    margin: 4rem 0;
+    color: #fff;
+}
+
+.comparison-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.comparison-header h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #fff, #e2e8f0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.comparison-column {
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.comparison-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.08);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-item:hover {
+    transform: translateY(-5px);
+}
+
+.comparison-icon {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.comparison-icon i {
+    font-size: 2.4rem;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-item:hover .comparison-icon {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.comparison-content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.comparison-content p {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .comparison-column {
+        padding: 1.5rem;
+    }
+}
+
+/* เพิ่ม animation effects */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.technique-card, .comparison-card, .metric-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* เพิ่ม Effects ใหม่ */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.glass-morphism {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--green), #38a169);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Animation Effects */
+.hover-float {
+    transition: transform 0.3s ease;
+}
+
+.hover-float:hover {
+    transform: translateY(-5px);
+}
+
+.hover-shadow {
+    transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pulse-effect {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ปรับปรุง Blog Header */
+.blog-header {
+    margin-bottom: 3rem;
+    padding: 3rem;
+}
+
+.blog-meta {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ปรับปรุง CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 4rem;
+    margin: 4rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background: linear-gradient(90deg, var(--green), #38a169);
+    color: white;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(56, 161, 105, 0.3);
+}
+
+/* ปรับปรุง Share Section */
+.share-section {
+    text-align: center;
+    padding: 3rem;
+    margin-top: 4rem;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.share-btn {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(145deg, #ffffff, #f0f2f5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

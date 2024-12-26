@@ -1,0 +1,339 @@
+:root{
+    --green:#27ae60;
+    --primary: #2563eb;    /* สีหลักของบริษัท */
+    --secondary: #1e40af;  /* สีรอง */
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:.7rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#fff;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--green);
+}
+
+body{
+    background:#eee;
+    padding: 0;
+}
+
+section{
+    padding:2rem 9%;
+    min-height: 100vh;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:#222;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color:var(--green);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:var(--green);
+    color:#fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background:var(--green);
+    letter-spacing: .2rem;
+    color: #fff;
+}
+
+/* Main header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* Logo styles */
+.logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.logo img {
+    height: 5rem;
+}
+
+.logo h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* Navigation styles */
+header .navbar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header .navbar a {
+    font-size: 2rem;
+    color: #222;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+header .navbar a:hover {
+    color: var(--green);
+    border-bottom: .2rem solid var(--green);
+}
+
+/* Menu bars icon (mobile) */
+#menu-bars {
+    display: none;
+    font-size: 3rem;
+    color: var(--green);
+    cursor: pointer;
+}
+
+/* Language selector styles */
+.language-selector {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.lang-btn {
+    padding: 8px 15px;
+    border: 2px solid var(--green);
+    background: transparent;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 14px;
+    min-width: 45px;
+}
+
+.lang-btn:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+.lang-btn.active {
+    background: var(--green);
+    color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    #menu-bars {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        transform: translateY(-50%);
+        z-index: 1001;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        transition: 0.3s linear;
+        z-index: 1000;
+    }
+
+    header .navbar.active {
+        top: 6.5rem;
+    }
+
+    header .navbar a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    header .navbar a:hover {
+        background: var(--green);
+        color: #fff;
+    }
+
+    .logo {
+        position: absolute;
+        left: 15%;
+        transform: translateX(-50%);
+        z-index: 999;
+    }
+    
+    .logo img {
+        height: 4.5rem;
+    }
+    
+    #menu-bars {
+        left: 2rem;
+        z-index: 1001;
+    }
+    
+    .language-selector {
+        margin-left: auto;
+        z-index: 999;
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 991px) {
+    header {
+        padding: 1.5rem 4%;
+    }
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+/* ปรับปรุงการทำงานบน mobile */
+@media (max-width: 480px) {
+    .heading {
+        font-size: 4rem; /* ลดขนาด heading บนมือถือ */
+    }
+    
+    .logo h1 {
+        font-size: 2rem; /* ลดขนาดโลโก้ */
+    }
+    
+    .lang-btn {
+        padding: 6px 12px; /* ปรับขนาดปุ่มภาษาให้เล็กลง */
+        font-size: 12px;
+    }
+
+    .logo {
+        position: absolute;
+        left: 20%;
+        transform: translateX(-50%);
+        z-index: 999;
+    }
+}
+
+/* สำหรับหน้าจอขนาด 769px ขึ้นไป */
+@media (min-width: 769px) {
+    header {
+        padding: 1.5rem 5%; /* ปรับ padding ให้เหมาะสม */
+    }
+
+    .logo {
+        flex: 0 0 auto;
+        margin-right: 3rem; /* เพิ่มระยะห่างระหว่างโลโก้กับเมนู */
+    }
+
+    .logo img {
+        height: 5rem;
+        transition: height 0.3s ease;
+    }
+
+    header .navbar {
+        flex: 1;
+        justify-content: center;
+        gap: 1.5rem; /* ระยะห่างระหว่างเมนูที่เหมาะสม */
+    }
+
+    header .navbar a {
+        font-size: 1.6rem; /* ปรับขนาดฟอนต์ให้เหมาะสม */
+        padding: 0.8rem 1.2rem;
+        position: relative;
+    }
+
+    /* เพิ่ม animation สำหรับ hover effect */
+    header .navbar a::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background: var(--green);
+        transition: width 0.3s ease;
+    }
+
+    header .navbar a:hover::after {
+        width: 100%;
+    }
+
+    .language-selector {
+        flex: 0 0 auto;
+        margin-left: 3rem; /* เพิ่มระยะห่างจากเมนู */
+    }
+
+    .lang-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.4rem;
+    }
+}
+
+/* สำหรับหน้าจอขนาด 992px ขึ้นไป */
+@media (min-width: 992px) and (max-width: 1200px) {
+    header {
+        padding: 1.5rem 0%;
+    }
+
+    header .navbar {
+        gap: 2rem;
+    }
+
+    header .navbar a {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+

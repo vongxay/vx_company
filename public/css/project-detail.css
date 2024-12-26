@@ -1,0 +1,160 @@
+.project-detail {
+    padding: 2rem 9%;
+}
+
+.project-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.project-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.project-gallery .main-image {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-gallery .main-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project-gallery .main-image img:hover {
+    transform: scale(1.05);
+}
+
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.thumbnail-grid img {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-grid img:hover {
+    transform: scale(1.1);
+}
+
+.tech-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.tech-icons span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f0f0f0;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.project-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-features li {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.result-item {
+    text-align: center;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.result-item:hover {
+    transform: translateY(-10px);
+}
+
+.result-item i {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .project-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .result-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-meta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.back-button {
+    margin-bottom: 2rem;
+}
+
+.back-button .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-button .btn:hover {
+    background: #333;
+    transform: translateX(-5px);
+}
+
+.back-button i {
+    font-size: 1.1rem;
+}

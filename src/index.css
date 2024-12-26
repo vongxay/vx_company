@@ -1,0 +1,75 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Heading style */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+/* Paragraph style */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #fff;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+/* Button style */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: var(--green);
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #fff;
+    color: var(--green);
+    letter-spacing: .2rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        font-size: 1.5rem;
+        padding: .7rem 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        font-size: 1.3rem;
+        padding: .6rem 2rem;
+    }
+}

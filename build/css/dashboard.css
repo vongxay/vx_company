@@ -1,0 +1,252 @@
+.dashboard {
+    padding: 2rem 9%;
+    margin-top: 8rem;
+}
+
+/* ส่วนหัวของแดชบอร์ด */
+.dashboard-header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card .icon {
+    font-size: 3rem;
+    color: var(--green);
+    margin-bottom: 1rem;
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    font-size: 1.6rem;
+    color: var(--text-light);
+}
+
+/* กราฟและแผนภูมิ */
+.dashboard-charts {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.chart-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.chart-container h2 {
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+/* ตารางข้อมูลล่าสุด */
+.recent-data {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.recent-data h2 {
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    padding: 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 1.4rem;
+}
+
+.data-table th {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.data-table td {
+    color: var(--text-light);
+}
+
+.status {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+}
+
+.status.completed {
+    background: #e6f4ea;
+    color: #1e8e3e;
+}
+
+.status.pending {
+    background: #fef7e6;
+    color: #f9a825;
+}
+
+.status.cancelled {
+    background: #feeae9;
+    color: #d93025;
+}
+
+/* การ์ดกิจกรรมล่าสุด */
+.activity-feed {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.activity-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.activity-details h4 {
+    font-size: 1.6rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.activity-details p {
+    font-size: 1.4rem;
+    color: var(--text-light);
+}
+
+.activity-time {
+    font-size: 1.2rem;
+    color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .dashboard-header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .dashboard {
+        padding: 2rem 4%;
+    }
+    
+    .dashboard-charts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-header {
+        grid-template-columns: 1fr;
+    }
+    
+    .data-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* ส่วนของการแจ้งเตือน */
+.notifications {
+    position: fixed;
+    top: 8rem;
+    right: 2rem;
+    width: 30rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: none;
+}
+
+.notifications.show {
+    display: block;
+}
+
+.notification-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-header h3 {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+}
+
+.notification-list {
+    max-height: 40rem;
+    overflow-y: auto;
+}
+
+.notification-item {
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.notification-item:hover {
+    background: #f8f9fa;
+}
+
+.notification-item.unread {
+    background: #f0f7ff;
+}
+
+.notification-item p {
+    font-size: 1.4rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.notification-item span {
+    font-size: 1.2rem;
+    color: #999;
+} 

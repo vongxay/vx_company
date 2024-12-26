@@ -1,0 +1,1257 @@
+.blog-detail-container {
+    max-width: 1200px;
+    margin: 8rem auto 4rem;
+    padding: 0 2rem;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 2rem;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.blog-header h1 {
+    font-size: 4rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+.blog-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--text-light);
+    font-size: 1.6rem;
+}
+
+.blog-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.featured-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+}
+
+.content-section {
+    margin-bottom: 4rem;
+}
+
+.content-section h2 {
+    font-size: 3.2rem;
+    color: #000;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.content-section p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+.benefits-list, .steps-list {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    padding-left: 2rem;
+}
+
+.benefits-list li, .steps-list li {
+    margin-bottom: 1rem;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tool-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+}
+
+.tool-card h3 {
+    font-size: 2rem;
+    color: var(--green);
+    margin-bottom: 1rem;
+}
+
+.tool-card p {
+    font-size: 1.6rem;
+    color: var(--text-light);
+}
+
+.warning-box {
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.warning-box p {
+    color: #856404;
+    margin-bottom: 1rem;
+}
+
+.cta-section {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    margin: 4rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1.5rem 4rem;
+    background: var(--green);
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #219150;
+    transform: translateY(-3px);
+}
+
+.share-section {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.share-section h3 {
+    font-size: 2.4rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.share-btn {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+    transform: translateY(-3px);
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.twitter {
+    background: #1da1f2;
+}
+
+.linkedin {
+    background: #0077b5;
+}
+
+@media (max-width: 768px) {
+    .blog-detail-container {
+        margin-top: 6rem;
+    }
+
+    .blog-header h1 {
+        font-size: 3rem;
+    }
+
+    .featured-image {
+        height: 300px;
+    }
+
+    .content-section h2 {
+        font-size: 2.8rem;
+    }
+
+    .content-section p {
+        font-size: 1.6rem;
+    }
+}
+
+.tool-features {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.tool-features span {
+    display: block;
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.pro:before {
+    content: "✓";
+    color: var(--green);
+    position: absolute;
+    left: 0;
+}
+
+.con:before {
+    content: "×";
+    color: #dc3545;
+    position: absolute;
+    left: 0;
+}
+
+.work-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.category {
+    background: #f8f9fa;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+    font-size: 2.4rem;
+    color: #000;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.category ul li {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    padding-left: 3rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.category ul li:before {
+    content: "•";
+    color: var(--green);
+    font-size: 2.4rem;
+    position: absolute;
+    left: 0.8rem;
+    top: -0.3rem;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tip {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.tip h3 {
+    color: var(--green);
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.comments-section {
+    margin-top: 6rem;
+    padding-top: 4rem;
+    border-top: 1px solid #eee;
+}
+
+.comment-form {
+    background: #f8f9fa;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: var(--green);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(33, 150, 83, 0.1);
+}
+
+.submit-comment {
+    background: var(--green);
+    color: #fff;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-comment:hover {
+    background: #219150;
+    transform: translateY(-2px);
+}
+
+.comment-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.comment-avatar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+.comment-meta h4 {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.comment-meta span {
+    font-size: 1.4rem;
+    color: var(--text-light);
+}
+
+.comment-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.comment-actions {
+    display: flex;
+    gap: 2rem;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    color: var(--green);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.comment-card {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@media (max-width: 768px) {
+    .comment-form {
+        padding: 2rem;
+    }
+    
+    .comment-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* เพิ่ม CSS สำหรับส่วนใหม่ */
+
+/* สไตล์สำหรับ AI Integration Section */
+.ai-integration-section {
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+    padding: 4rem;
+    border-radius: 2rem;
+    margin: 4rem 0;
+}
+
+.ai-integration-section h2 {
+    font-size: 3.2rem;
+    color: #000;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.ai-workflow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.workflow-step {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.workflow-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.workflow-step::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--green);
+}
+
+.workflow-step h3 {
+    font-size: 2.4rem;
+    color: #000;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.workflow-step p {
+    font-size: 1.8rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ปรับ Responsive */
+@media (max-width: 768px) {
+    .ai-integration-section h2 {
+        font-size: 2.8rem;
+    }
+    
+    .workflow-step h3 {
+        font-size: 2.2rem;
+    }
+    
+    .workflow-step p {
+        font-size: 1.6rem;
+    }
+}
+
+/* สไตล์สำหรับ AI Tools Comparison */
+.ai-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 3rem 0;
+    background: #fff;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.ai-comparison-table th,
+.ai-comparison-table td {
+    padding: 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.ai-comparison-table th {
+    background: var(--green);
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.ai-comparison-table tr:hover {
+    background: #f8f9fa;
+}
+
+/* สไตล์สำหรับ AI Success Stories */
+.success-stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin: 4rem 0;
+}
+
+.story-card {
+    background: #fff;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.story-company-logo {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+    margin-right: 1.5rem;
+}
+
+/* สไตล์สำหรับ AI Implementation Tips */
+.implementation-tips {
+    background: #f8f9fa;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    margin: 4rem 0;
+}
+
+.tip-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--green);
+}
+
+/* สไตล์สำหรับ AI ROI Calculator */
+.roi-calculator {
+    background: #f8f9fa;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    margin: 4rem 0;
+}
+
+.calculator-input {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-group label {
+    font-size: 1.6rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.calculate-btn {
+    background: var(--green);
+    color: white;
+    padding: 1.2rem 2.4rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.calculate-btn:hover {
+    background: #219150;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(33, 145, 80, 0.2);
+}
+
+.roi-results {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.result-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-item span {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.result-item strong {
+    display: block;
+    font-size: 2rem;
+    color: var(--green);
+}
+
+/* ปรับปรุง Responsive Design */
+@media (max-width: 768px) {
+    .ai-workflow {
+        grid-template-columns: 1fr;
+    }
+    
+    .ai-comparison-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .success-stories {
+        grid-template-columns: 1fr;
+    }
+    
+    .calculator-input {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* เพิ่ม Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.workflow-step {
+    animation: slideIn 0.5s ease forwards;
+}
+
+/* สไตล์สำหรับผลลัพธ์ ROI */
+.roi-results {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 1rem;
+    animation: fadeIn 0.5s ease;
+}
+
+.roi-results h3 {
+    font-size: 2.4rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.result-item {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.result-item span {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.result-item strong {
+    display: block;
+    font-size: 2.4rem;
+    color: var(--green);
+}
+
+@media (max-width: 768px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* สไตล์สำหรับรายการความคิดเห็น */
+.comments-list {
+    margin-top: 3rem;
+}
+
+.comment-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.5s ease;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.comment-avatar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+.comment-meta h4 {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.comment-meta span {
+    font-size: 1.4rem;
+    color: var(--text-light);
+}
+
+.comment-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+.comment-actions {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    color: var(--green);
+}
+
+.loading-spinner {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.8rem;
+    color: var(--text-light);
+}
+
+.no-comments {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.8rem;
+    color: var(--text-light);
+    background: #f8f9fa;
+    border-radius: 1.5rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reply-form {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-actions {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.submit-reply,
+.cancel-reply {
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.submit-reply {
+    background-color: var(--green);
+    color: white;
+}
+
+.submit-reply:hover {
+    background-color: #219150;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(33, 145, 80, 0.2);
+}
+
+.submit-reply:active {
+    transform: translateY(0);
+}
+
+.submit-reply::before {
+    content: '↪';
+    font-size: 1.8rem;
+}
+
+.cancel-reply {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border: 1px solid #dee2e6;
+}
+
+.cancel-reply:hover {
+    background-color: #e9ecef;
+    color: #495057;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-reply:active {
+    transform: translateY(0);
+}
+
+.cancel-reply::before {
+    content: '×';
+    font-size: 2rem;
+}
+
+/* เพิ่ม Animation เมื่อปุ่มปรากฏ */
+.form-actions button {
+    animation: fadeInUp 0.3s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ปรับแต่งสำหรับมือถือ */
+@media (max-width: 480px) {
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .submit-reply,
+    .cancel-reply {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* สไตล์สำหรับการตอบกลับ */
+.reply-card {
+    margin-left: 4rem;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+    border-left: 3px solid var(--green);
+}
+
+.reply-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.reply-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reply-avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+.reply-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.reply-meta strong {
+    font-size: 1.6rem;
+    color: var(--text-dark);
+}
+
+.reply-meta span {
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+.reply-content {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+    margin: 1rem 0;
+}
+
+.reply-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.reply-actions .action-btn {
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.reply-actions .action-btn:hover {
+    background-color: rgba(33, 145, 80, 0.1);
+}
+
+.reply-actions .action-btn.liked {
+    color: var(--green);
+}
+
+.reply-actions .action-btn.liked i {
+    transform: scale(1.1);
+}
+
+.reply-actions .action-btn span {
+    margin-left: 0.5rem;
+    font-weight: 500;
+}
+
+/* เพิ่ม Animation เมื่อกดไลค์ */
+@keyframes likeAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.reply-actions .action-btn:active i {
+    animation: likeAnimation 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .reply-card {
+        margin-left: 2rem;
+    }
+}
+
+/* เพิ่ม CSS สำหรับ pagination */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.pagination {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pagination-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pagination-item {
+    list-style: none;
+}
+
+.pagination-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 4rem;
+    height: 4rem;
+    padding: 0 1rem;
+    border-radius: 0.8rem;
+    background: #fff;
+    color: var(--text-dark);
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #dee2e6;
+    cursor: pointer;
+}
+
+.pagination-link:hover {
+    background: var(--green);
+    color: #fff;
+    border-color: var(--green);
+    transform: translateY(-2px);
+}
+
+.pagination-link[data-active="true"] {
+    background: var(--green);
+    color: #fff;
+    border-color: var(--green);
+}
+
+.pagination-previous,
+.pagination-next {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.6rem;
+    height: 4rem;
+    border-radius: 0.8rem;
+    background: #fff;
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #dee2e6;
+    cursor: pointer;
+    gap: 0.8rem;
+    min-width: 12rem;
+}
+
+.pagination-previous:hover:not(:disabled),
+.pagination-next:hover:not(:disabled) {
+    background: var(--green);
+    color: #fff;
+    border-color: var(--green);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(33, 145, 80, 0.2);
+}
+
+.pagination-previous:active:not(:disabled),
+.pagination-next:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.pagination-previous svg,
+.pagination-next svg {
+    transition: transform 0.3s ease;
+}
+
+.pagination-previous:hover:not(:disabled) svg {
+    transform: translateX(-3px);
+}
+
+.pagination-next:hover:not(:disabled) svg {
+    transform: translateX(3px);
+}
+
+.pagination-previous:disabled,
+.pagination-next:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #f8f9fa;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .pagination-previous,
+    .pagination-next {
+        padding: 0.6rem 1.2rem;
+        height: 3.6rem;
+        font-size: 1.4rem;
+        min-width: 10rem;
+    }
+    
+    .pagination-previous svg,
+    .pagination-next svg {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagination-previous span,
+    .pagination-next span {
+        display: none;
+    }
+    
+    .pagination-previous,
+    .pagination-next {
+        min-width: 4rem;
+        padding: 0.6rem;
+    }
+}
+
+.reply-pagination {
+    margin-left: 4rem;
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .reply-pagination {
+        margin-left: 2rem;
+    }
+}
+
+/* เพิ่ม CSS สำหรับ Sign In Dialog */
+.sign-in-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.dialog-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dialog-content h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--text-dark);
+}
+
+.dialog-content button {
+    width: 100%;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.google-btn {
+    background: #4285f4;
+    color: white;
+}
+
+.microsoft-btn {
+    background: #2f2f2f;
+    color: white;
+}
+
+.email-btn {
+    background: var(--green);
+    color: white;
+}
+
+.cancel-btn {
+    background: #f8f9fa;
+    color: var(--text-dark);
+    border: 1px solid #dee2e6 !important;
+}
+
+.dialog-content button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

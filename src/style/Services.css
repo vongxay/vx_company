@@ -1,0 +1,109 @@
+/* Services section container */
+.services .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+/* Main heading */
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: bold;
+}
+
+.heading span {
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: bold;
+}
+
+/* Individual service box */
+.services .box-container .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Icon styles */
+.services .box-container .box i {
+    color: var(--green);
+    font-size: 5rem;
+    padding: 1rem 0;
+}
+
+/* Service title */
+.services .box-container .box h3 {
+    color: #222;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+/* Service description */
+.services .box-container .box p {
+    color: #333;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+/* Tilt effect animation */
+.tilt {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transition: transform 0.3s;
+}
+
+/* .tilt:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+} */
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    section {
+        padding: 2rem 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 4rem;
+    }
+
+    .services .box-container {
+        gap: 1rem;
+    }
+
+    .services .box-container .box {
+        flex: 1 1 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Section padding */
+section {
+    padding: 2rem 9%;
+    min-height: 100vh;
+}
+
+/* General icon color override for FontAwesome icons */
+.fas, .fab {
+    color: var(--green);
+    transition: all 0.3s ease;
+}
+
+/* Optional hover effect for icons */
+.services .box-container .box:hover i {
+    transform: translateY(-5px);
+}

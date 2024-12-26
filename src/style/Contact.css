@@ -1,0 +1,138 @@
+/* Contact Section Styles */
+.contact .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+/* Image Container */
+.contact .row .image {
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+    width: 100%;
+}
+
+/* Form Container */
+.contact .row form {
+    flex: 1 1 40rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    background: #fff;
+}
+
+/* Input Box Container */
+.contact .row form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Input Styles */
+.contact .row form .inputBox input,
+.contact .row form .box,
+.contact .row form textarea {
+    width: 100%;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    color: #333;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: .1rem solid rgba(0,0,0,.1);
+    text-transform: none;
+}
+
+/* Split Inputs (Name & Email) */
+.contact .row form .inputBox input {
+    width: 49%;
+}
+
+/* Focus States */
+.contact .row form .inputBox input:focus,
+.contact .row form .box:focus,
+.contact .row form textarea:focus {
+    border-color: var(--green);
+}
+
+/* Textarea Style */
+.contact .row form textarea {
+    height: 20rem;
+    resize: none;
+}
+
+/* Submit Button */
+.contact .row form .btn {
+    margin: .5rem 0;
+}
+
+/* Heading Styles */
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: bold;
+}
+
+.heading span {
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: bold;
+}
+
+/* Button Style */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: var(--green);
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--green);
+    letter-spacing: .2rem;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact .row {
+        flex-direction: column;
+    }
+    
+    .contact .row .image {
+        margin-bottom: 2rem;
+    }
+    
+    .contact .row form .inputBox input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .heading {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact .row form {
+        padding: 1rem;
+    }
+    
+    .contact .row form .inputBox input,
+    .contact .row form .box,
+    .contact .row form textarea {
+        font-size: 1.5rem;
+    }
+    
+    .heading {
+        font-size: 3rem;
+    }
+}
