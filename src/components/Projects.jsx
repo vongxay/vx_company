@@ -30,23 +30,9 @@ const Projects = () => {
         </div>
 
         <div className="box tilt">
-            <img src="images/img-4.jpeg" alt="Wordpress" />
-            <div className="content">
-                <a href="/project-detail-4" className="btn">View details</a>
-            </div>
-        </div>
-
-        <div className="box tilt">
             <img src="images/img-5.jpeg" alt="Translation Services" />
             <div className="content">
                 <a href="/project-detail-5" className="btn">View details</a>
-            </div>
-        </div>
-
-        <div className="box tilt">
-            <img src="images/img-6.jpeg" alt="Web Development" />
-            <div className="content">
-                <a href="/project-detail-6" className="btn">View details</a>
             </div>
         </div>
 
